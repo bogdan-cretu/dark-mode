@@ -117,29 +117,6 @@ if (localStorage.getItem('mode') == 'null'){
 	localStorage.setItem('mode', 'dark')
 };
 
-if (localStorage.getItem('mode') == 'light'){
-	document.getElementById("settings-icon").src="https://uploads-ssl.webflow.com/5dbc9b2e04f8b26d796b15fe/63ca8f357d71b65856d95756_gear-icon-black.svg";
-    document.getElementById('light-icon').src="https://uploads-ssl.webflow.com/5dbc9b2e04f8b26d796b15fe/63ca8f3773e6859980d751df_light-icon-black.svg";
-    document.getElementById('dark-icon').src="https://uploads-ssl.webflow.com/5dbc9b2e04f8b26d796b15fe/63ca8f35198b210dc8aa3f1e_dark-icon-black.svg";
-    document.getElementById('cart').src="https://uploads-ssl.webflow.com/5dbc9b2e04f8b26d796b15fe/63cbfdee440ed78869ded344_direct%20buy%20black.svg";
-    document.getElementById('heart').src="https://uploads-ssl.webflow.com/5dbc9b2e04f8b26d796b15fe/63cbfdedd802df173d74a305_latest%20works%20black.svg";
-    gradient.classList.add('background-gradient-white')
-    gradient2.classList.add('background-gradient-bottom')
-    bkg.forEach(function(elem){
-    elem.classList.add('text-color-black-fade')})
-    changeStylesLight();
-} else if(localStorage.getItem('mode') == 'dark') {
-    document.getElementById('light-icon').src="https://uploads-ssl.webflow.com/5dbc9b2e04f8b26d796b15fe/63c92da7b437662d07f9c074_light-icon.svg";
-    document.getElementById('dark-icon').src="https://uploads-ssl.webflow.com/5dbc9b2e04f8b26d796b15fe/63ca8f355fb8d05c454b61cc_dark-icon.svg";
-    document.getElementById("settings-icon").src="https://uploads-ssl.webflow.com/5dbc9b2e04f8b26d796b15fe/63c6ab3dc993830542c74309_gear-icon.svg";
-    document.getElementById('cart').src="https://uploads-ssl.webflow.com/5dbc9b2e04f8b26d796b15fe/63cbfdb170ce980bc8428e47_direct%20buy.svg";
-    document.getElementById('heart').src="https://uploads-ssl.webflow.com/5dbc9b2e04f8b26d796b15fe/63cbfdb0b62733f199150ddd_latest%20works.svg";
-    gradient.classList.remove('background-gradient-white')
-    gradient2.classList.remove('background-gradient-bottom')
-    bkg.forEach(function(elem){
-    elem.classList.remove('text-color-black-fade')})
-    changeStylesDark();
-}
 
 
 
